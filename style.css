@@ -1,14 +1,15 @@
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
-
-h1 {
+h1,
+h2 {
   text-align: center;
+}
+h1 {
   font-size: 200%;
 }
 
 h2 {
-  text-align: center;
   font-weight: 100;
   font-size: 110%;
 }
@@ -17,37 +18,68 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-
 }
 
 nav li {
   display: inline-block;
   margin-top: 0;
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
   margin-bottom: 0;
   text-decoration: underline;
 }
 
-.blue-button {
+.cta-button {
   background-color: blue;
-  text-decoration: none !important;
+  text-decoration: none;
   color: white;
   padding: 0.5em;
   border-radius: 6px;
   width: 8em;
   text-align: center;
   display: inline-block;
-} 
+}
 
-.signup-form form input[type=submit] {
+.hero-heading {
+  line-height: 0;
+  /* color: red */
+}
+.hero-video {
+  width: 32rem;
+  height: 18rem;
+}
+.hero,
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 50%;
+}
+
+.submit-btn {
   border: none;
   background-color: blue;
-  text-decoration: none !important;
+  text-decoration: none;
   color: white;
   padding: 0.5em;
   border-radius: 6px;
   width: 8em;
   text-align: center;
   display: inline-block;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  box-sizing: border-box;
+  padding: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+/* .small-input {
+  width: 50%;
+} */
+.large-input {
+  width: 100%;
 }
